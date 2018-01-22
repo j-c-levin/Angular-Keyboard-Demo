@@ -1,5 +1,21 @@
 # AngularKeyboard
 
+### Live demo
+
+https://angular-keyboard-demo.netlify.com
+
+### To do
+
+* Prettify
+
+* Style to make sense like a textbox
+
+* Get the cursor highlight resizing for different keys
+
+* Change the event to 'on mouse up' rather than 'click'
+
+* Include tool to make creating the area coords easier
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.9.
 
 ## Development server
