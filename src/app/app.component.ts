@@ -14,7 +14,6 @@ export class AppComponent {
   isBoxHidden = true;
 
   onAreaPressed(value: AreaPressed) {
-    console.log(value);
     if (value.key === 'BACKSPACE') {
       this.text = this.text.slice(0, this.text.length - 1);
     } else {
@@ -22,7 +21,7 @@ export class AppComponent {
     }
 
     this.highlightBoxLeft = `${value.left}`;
-    this.highlightBoxTop = `${value.top - 5}`;
+    this.highlightBoxTop = `${Number(value.top) - 5}`;
     this.isBoxHidden = false;
     setTimeout(() => {
       this.isBoxHidden = true;
