@@ -1,0 +1,46 @@
+<section>
+  <map name="primary">
+    <!-- Top row -->
+    <area shape="rect" coords="13,150,120,280" (click)="onAreaPressed({key:'p',top:'150',left:'13'})">
+    <area shape="rect" coords="140,150,245,280" (click)="onAreaPressed({key:'w',top:'150',left:'140'})">
+    <area shape="rect" coords="260,150,365,280" (click)="onAreaPressed({key:'e',top:'150',left:'260'})">
+    <area shape="rect" coords="385,150,490,280" (click)="onAreaPressed({key:'r',top:'150',left:'385'})">
+    <area shape="rect" coords="510,150,610,280" (click)="onAreaPressed({key:'t',top:'150',left:'510'})">
+    <area shape="rect" coords="630,150,735,280" (click)="onAreaPressed({key:'y',top:'150',left:'630'})">
+    <area shape="rect" coords="750,150,860,280" (click)="onAreaPressed({key:'u',top:'150',left:'750'})">
+    <area shape="rect" coords="875,150,980,280" (click)="onAreaPressed({key:'i',top:'150',left:'875'})">
+    <area shape="rect" coords="1000,150,1105,280" (click)="onAreaPressed({key:'o',top:'150',left:'1000'})">
+    <area shape="rect" coords="1125,150,1230,280" (click)="onAreaPressed({key:'p',top:'150',left:'1125'})">
+    <!-- /Top row -->
+    <!-- Middle row -->
+    <area shape="rect" coords="75,315,185,450" (click)="onAreaPressed({key:'a',top:'320',left:'75'})">
+    <area shape="rect" coords="200,315,305,450" (click)="onAreaPressed({key:'s',top:'320',left:'200'})">
+    <area shape="rect" coords="325,315,430,450" (click)="onAreaPressed({key:'d',top:'320',left:'325'})">
+    <area shape="rect" coords="448,315,553,450" (click)="onAreaPressed({key:'f',top:'320',left:'448'})">
+    <area shape="rect" coords="570,315,673,450" (click)="onAreaPressed({key:'g',top:'320',left:'570'})">
+    <area shape="rect" coords="695,315,800,450" (click)="onAreaPressed({key:'h',top:'320',left:'695'})">
+    <area shape="rect" coords="815,315,920,450" (click)="onAreaPressed({key:'j',top:'320',left:'815'})">
+    <area shape="rect" coords="940,315,1045,450" (click)="onAreaPressed({key:'k',top:'320',left:'940'})">
+    <area shape="rect" coords="1065,315,1170,450" (click)="onAreaPressed({key:'l',top:'320',left:'1065'})">
+    <!-- /Middle row -->
+    <!-- Bottom row -->
+    <area shape="rect" coords="200,480,305,620" (click)="onAreaPressed({key:'z',top:'490',left:'200'})">
+    <area shape="rect" coords="325,480,430,620" (click)="onAreaPressed({key:'x',top:'490',left:'325'})">
+    <area shape="rect" coords="445,480,550,620" (click)="onAreaPressed({key:'c',top:'490',left:'445'})">
+    <area shape="rect" coords="570,480,675,620" (click)="onAreaPressed({key:'v',top:'490',left:'570'})">
+    <area shape="rect" coords="695,480,800,620" (click)="onAreaPressed({key:'b',top:'490',left:'695'})">
+    <area shape="rect" coords="815,480,920,620" (click)="onAreaPressed({key:'n',top:'490',left:'815'})">
+    <area shape="rect" coords="940,480,1045,620" (click)="onAreaPressed({key:'m',top:'490',left:'940'})">
+    <!-- /Bottom row -->
+    <!-- Special keys -->
+    <!-- <area shape="rect" coords="450,650,920,790" (click)="onAreaPressed({key:' ',top:'650',left:'600'})"> -->
+    <area shape="rect" coords="450,650,920,790" (click)="onAreaPressed($event)">
+    <area shape="rect" coords="1100,480,1230,620" (click)="onAreaPressed({key:'BACKSPACE',top:'485',left:'1110'})">
+    <!-- /Special keys -->
+  </map>
+  <img usemap="#primary" src="assets/keyboard.png">
+  <svg width="107" height="135" [style.top.px]="highlightBoxTop" [style.left.px]="highlightBoxLeft" [class.hidden-box]="isBoxHidden">
+    <rect width="100%" height="100%" id="highlight-box" />
+  </svg>
+</section>
+<p>{{text}}</p>

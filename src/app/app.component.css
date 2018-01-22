@@ -1,0 +1,31 @@
+p {
+    font-size: 3rem;
+    font-family: cursive;
+}
+
+img{
+    -khtml-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    display: block;
+}
+
+section {
+    position: relative;
+}
+
+section svg {
+    position: absolute;
+}
+
+#highlight-box {
+    fill:rgba(255, 255, 255, 0.794);
+    rx: 10px;
+    ry: 10px;
+}
+
+.hidden-box {
+    visibility: hidden;
+}
