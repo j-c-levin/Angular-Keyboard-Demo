@@ -16,6 +16,8 @@ https://angular-keyboard-demo.netlify.com
 
 * Include tool to make creating the area coords easier
 
+* "You should rewrite the readme to be more project specific with description, install instructions and the environment you built it with, etc. Perhaps a picture of it running. You can then link to the typical angular readme file."
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.9.
 
 ## Development server
